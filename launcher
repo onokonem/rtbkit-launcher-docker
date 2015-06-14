@@ -1,0 +1,9 @@
+#!/bin/sh -ex
+
+export PATH="/opt/local/bin:$PATH"
+export LD_LIBRARY_PATH="/opt/local/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/opt/local/lib/pkgconfig/:/opt/local/lib/pkg-config/:$PKG_CONFIG_PATH"
+
+cd /opt/rtbkit
+
+exec ./build/x86_64/bin/launcher --node localhost --script ./launch.sh --bin ./build/x86_64/bin --launch rtbkit/sample.launch.json
