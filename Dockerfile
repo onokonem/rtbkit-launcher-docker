@@ -1,4 +1,4 @@
-FROM intercom/rtbkit:latest
+FROM onokonem/rtbkit:latest
 
 ADD launcher /launcher
 ADD sample.bootstrap.json /opt/rtbkit/rtbkit/sample.bootstrap.json
